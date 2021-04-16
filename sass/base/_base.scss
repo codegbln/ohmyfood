@@ -1,5 +1,20 @@
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$tertiary-color: #99E2D0;
+$font-stack: Roboto, sans-serif;
+$font-stack-alt: Shrikhand, cursive;
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+body {
+font-family: Roboto, sans-serif;
+}
+
+p{
+    text-decoration: none;
+}
+
