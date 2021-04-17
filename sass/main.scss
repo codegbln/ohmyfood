@@ -2,12 +2,15 @@
 @import "./base/base";
 @import "./utilities/variables";
 
-.nav{
-   display: flex; 
-   align-items: center;
-   
-   ul{
-       display: flex;
-       list-style-type: none;
-   }
+.home{
+    padding: 20px 0;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.map{
+    padding: 20px 0;
+    margin-left: 15px;
+    margin-right: 15px;
+    background: #f2f2f2;
 }
