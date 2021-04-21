@@ -50,4 +50,22 @@ p {
   text-decoration: none;
 }
 
+.booking {
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 2em 2em;
+}
+.booking .bold--font {
+  font-weight: 500;
+}
+.booking .light--font {
+  font-weight: 300;
+}
+.booking .margin__20 {
+  margin-bottom: 1.25em;
+}
+.booking .margin__16 {
+  margin-bottom: 1em;
+}
+
 /*# sourceMappingURL=style.css.map */
