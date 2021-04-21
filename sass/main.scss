@@ -2,15 +2,39 @@
 @import "./base/base";
 @import "./utilities/variables";
 
-.home{
+.container{
     padding: 20px 0;
     margin-left: 15px;
     margin-right: 15px;
 }
 
+.navbar{
+box-shadow:0 0.5px 1.4px rgba(0, 0, 0, 0.18),
+0 4px 11px rgba(0, 0, 0, 0.09);
+padding-top: 1.5em;
+padding-bottom: 1em;
+text-align: center;
+}
+
+
 .map{
+    text-align: center;
     padding: 20px 0;
-    margin-left: 15px;
-    margin-right: 15px;
-    background: #f2f2f2;
+
+    .map__marker{
+        position:absolute;
+        left: 6em;
+        color: black;
+    }
+
+    .map__text{
+        position: relative;
+        font-weight: 400;
+        color: black;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
 }
