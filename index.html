@@ -11,28 +11,102 @@
     <title>Ohmyfood</title>
 </head>
 <body>
+    <nav class="navbar">
+        <a class="navbar__logo" href="/assets/logo-nav.html">
+    <img src="/images/logo/ohmyfood@2x.svg" alt="Ohmyfood logo">
+        </a>
+    </nav>
+
+<!-- Navigation & Map -->
+<div class="map">
+    <a href="/menu.html">
+    <span class="map__marker">
+        <i class="fas fa-map-marker-alt"></i> 
+    </span>
+    <h3 class="map__text">Paris, Belleville</h3> 
+    </a>
+</div>
+
+<!-- Explore -->
+<div class="booking">
+    <h2 class="bold--font margin__24">Book the menu you like</h2> 
+    <h4 class="light--font margin__24">Discover top-of-the-art restaurants we picked for you</h4>
+    <button class="booking__btn" type="button">Explore our restaurants</button>
+</div>
+
+<!-- Order Steps -->
+
+<div class="order">
+    <h2 class="margin-20--bottom">How it works</h2>   
+    <div class="order-group">
+        <div class="order-item">
+            <span class="order__1 circle">1</span> 
+            <span class="order__icons"><i class="fas fa-mobile-alt fa-1x"></i></span> 
+            Chose a restaurant
+        </div>
+
+        <div class="order-item"><span class="order__2 circle">2</span> 
+        <span class="order__icons"><i class="fas fa-list-ul"></i></span> Create your menu</div>
+        <div class="order-item"><span class="order__3 circle">3</span> 
+        <span class="order__icons"><i class="fas fa-store"></i></span> Go enjoy it at the restaurant</div> 
+    </div>
+</div>
+
+
+    <!-- Restaurant cards -->
+    <div class="card-group">
+        <h2 class="margin-20--bottom">Restaurants</h2>
+           <div class="card margin-20--bottom">
+               <img class="card__img-top" src="/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
+               <div class="card__body">
+               <h4 class="card__title margin-6--bottom">The Full Palette</h4>
+               <p class="card__text">New York</p>
+               </div> 
+           </div>
+   
+       <div class="card margin-20--bottom">
+           <img class="card__img-top" src="/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">
+           <div class="card__body">
+               <h4 class="card__title margin-6--bottom">The Enchanted Plate</h4>
+               <p class="card__text">New York</p>
+           </div>
+       </div>
+
+       <div class="card margin-20--bottom">
+           <img class="card__img-top" src="/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
+           <div class="card__body">
+               <h4 class="card__title margin-6--bottom">Bastille</h4>
+               <p class="card__text">New York</p>
+           </div>
+
+       </div>
+
+       <div class="card margin-20--bottom">
+           <img class="card__img-top" src="/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
+           <div class="card__body">
+               <h4 class="card__title margin-6--bottom">Le Gourmand</h4>
+               <p class="card__text">New York</p>
+           </div>
+       </div>
+
+   </div>
+
+   <!-- Footer -->
+   <div class="footer">
     <div class="container">
-        <header>
-            <img src="./images/logo/ohmyfood@2x.svg" alt="Ohmyfood logo">
-        </header>
-        <div class="location">
-            <span class="map-marker">
-                <i class="fas fa-map-marker-alt"></i> 
-            </span>
-            <h4>Paris Belleville</h4> 
-        </div>
-        <div>
-            <h3>Book the menu you like</h3>
-            <p>Discover top-of-the-art restaurants we picked for you</p>
-        </div>
-
-
-
+        <h3 class="footer__logo margin-20--bottom">ohmyfood</h3>
+        <span class="footer__icon margin-10--bottom">
+        <i class="fas fa-utensils"></i></span>
+    <p class="footer__icon-text margin-10--bottom">Suggest a Restaurant</p>
         
+        <span class="footer__icon margin-10--bottom">
+            <i class="fas fa-hands-helping"></i></span>
+            <p class="footer__icon-text margin-10--bottom"> Become a partner</p>
+        
+        <p class="margin-10--bottom">Legal</p>
+        <a href="#" class="footer__email"><p>Contact</p></a>
     </div>
-    <!-- Footer -->
-     <div class="container">
-
     </div>
+       
 </body>
 </html>

@@ -2,13 +2,6 @@
 @import "./utilities/variables";
 @import "./base/base";
 
-
-.container {
-    padding: 20px 0;
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
 .navbar {
     box-shadow: 0 0.5px 1.4px rgba(0, 0, 0, 0.18),
         0 4px 11px rgba(0, 0, 0, 0.09);
@@ -17,13 +10,31 @@
     text-align: center;
 }
 
-.margin-20--bottom{
+.margin-20--bottom {
     margin-bottom: 20px;
+}
+
+.margin-6--bottom {
+    margin-bottom: 6px;
+}
+
+.margin-10--bottom {
+    margin-bottom: 10px;
+}
+.margin-15--bottom{
+    margin: bottom 15px;
+}
+
+a {
+    text-decoration: none;
 }
 
 .map {
     text-align: center;
     padding: 20px 0;
+    background: rgb(233, 233, 233);
+    background: linear-gradient(0deg, rgba(233, 233, 233, 1) 85%, 
+    rgba(233, 233, 233, 1) 95%, rgba(198, 198, 198, 1) 100%);
 
     .map__marker {
         position: absolute;
@@ -44,7 +55,7 @@
 
 .booking {
     text-align: center;
-    background-color: #f2f2f2;
+    background-color: #f4f5f4;
     padding: 2em 2em 3em;
 
 
@@ -79,10 +90,8 @@
     flex-wrap: wrap;
     margin-top: 1em;
     margin-bottom: 1em;
-
-    .margin-16 {
-        margin-bottom: 1em;
-    }
+    padding-top: 30px;
+    padding-bottom: 30px;
 
     .order-group {
         display: flex;
@@ -91,48 +100,112 @@
     }
 
     .order-item {
-        border: 5px solid #f2f2f2;
-        background-color: #f2f2f2;
-        border-radius: 1em;
-        margin: 10px;
-        padding: 1em;
+        border: 5px solid #f4f5f4;
+        background-color: #f4f5f4;
+        border-radius: 25px;
+        margin: 12px;
+        padding: 22px 20px;
         box-shadow:
-            0 0.9px 1.6px rgba(0, 0, 0, 0.17),
-            0 2.9px 5.4px rgba(0, 0, 0, 0.101),
-            0 13px 24px rgba(0, 0, 0, 0.069);
+            0 0.8px 0.9px rgba(0, 0, 0, 0.011),
+            0 1.9px 2.3px rgba(0, 0, 0, 0.016),
+            0 3.5px 4.3px rgba(0, 0, 0, 0.02),
+            0 6.3px 7.6px rgba(0, 0, 0, 0.024),
+            0 11.7px 14.2px rgba(0, 0, 0, 0.029),
+            0 28px 34px rgba(0, 0, 0, 0.04);
     }
 
+    .order__1,
+    .order__2,
+    .order__3 {
+        position: absolute;
+        left: 15px;
+        color: white;
+
+    }
+
+    .circle {
+        background-color: #9356DC;
+        border: 5px solid #9356DC;
+        height: 25px;
+        width: 25px;
+        border-radius: 100%;
+    }
+
+    .order__icons {
+        padding-left: 15px;
+        padding-right: 20px;
+        color: rgb(97, 97, 97);
+    }
 }
 
 .card-group {
-        display: flex;
-        flex-direction: column;
-        padding: 0 -15;
-        flex-grow: 1;
-        background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 15px;
+    flex-grow: 1;
+    background-color: #f4f5f4;
+    max-width: 100%;
 
     .card {
         display: block;
-        border: 0px solid white;
+        border: 0px solid rgb(255, 255, 255);
         border-radius: 15px;
         box-shadow:
-        0 0.9px 5.9px rgba(0, 0, 0, 0.17),
-        0 3.1px 19.9px rgba(0, 0, 0, 0.101),
-        0 14px 89px rgba(0, 0, 0, 0.069);
+            0 0.9px 5.9px rgba(0, 0, 0, 0.17),
+            0 3.1px 19.9px rgba(0, 0, 0, 0.101),
+            0 14px 89px rgba(0, 0, 0, 0.069);
     }
 
     .card__img-top {
-        height: 160px;
+        height: 170px;
         object-fit: cover;
         border-radius: 15px 15px 0 0;
         width: 100%;
         max-width: 100%;
     }
-    .margin-20--bottom{
-        margin-bottom: 1.250em;
+
+    .card__body {
+        padding: 15px;
     }
 
-    .card__body{
-        padding: 10px;
+    .card__title {
+        font-weight: 500;
+
     }
+
+    .card__text {
+        font-weight: 300;
+
+    }
+
+    .heart {
+        display: inline;
+    }
+}
+
+.footer {
+    background-color: rgb(47, 47, 47);
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .footer__logo {
+        font-family: $font-stack-alt;
+        font-weight: 300;
+    }
+
+    .footer__icon {
+        position: absolute;
+
+    }
+
+    .footer__icon-text {
+        position: relative;
+        left: 25px;
+    }
+
+    .footer__email {
+        color: white;
+    }
+
 }
