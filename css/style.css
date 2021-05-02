@@ -20,9 +20,14 @@ p {
 
 .navbar {
   box-shadow: 0 0.5px 1.4px rgba(0, 0, 0, 0.18), 0 4px 11px rgba(0, 0, 0, 0.09);
-  padding-top: 1.5em;
-  padding-bottom: 1em;
   text-align: center;
+  padding: 12px 0;
+}
+.navbar .navbar__back {
+  position: absolute;
+  left: 15px;
+  color: black;
+  padding-top: 10px;
 }
 
 .margin-20--bottom {
@@ -38,11 +43,49 @@ p {
 }
 
 .margin-15--bottom {
-  margin: bottom 15px;
+  margin-bottom: 15px;
+}
+
+.margin-40px--top--bottom {
+  padding: 40px 0px;
+}
+
+.margin-40px-bottom {
+  margin-bottom: 40px;
+}
+
+.margin-50px--bottom {
+  margin-bottom: 50px;
+}
+
+.margin-100px--bottom {
+  margin-bottom: 100px;
 }
 
 a {
   text-decoration: none;
+}
+
+.book__button {
+  box-shadow: 0 8.1px 10.4px rgba(0, 0, 0, 0.12), 0 65px 83px rgba(0, 0, 0, 0.06);
+  color: white;
+  background: #9356dc;
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  border-radius: 1.5em;
+  padding: 1em 1.5em;
+  border: none;
+  font-size: 0.9em;
+}
+
+.order__button {
+  box-shadow: 0 8.1px 10.4px rgba(0, 0, 0, 0.12), 0 65px 83px rgba(0, 0, 0, 0.06);
+  color: white;
+  background: #9356dc;
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  border-radius: 1.5em;
+  padding: 15px 70px;
+  border: none;
+  font-size: 0.9em;
 }
 
 .map {
@@ -65,29 +108,19 @@ a {
   text-decoration: none;
 }
 
-.booking {
+.book {
   text-align: center;
   background-color: #f4f5f4;
   padding: 2em 2em 3em;
 }
-.booking .bold--font {
+.book .bold--font {
   font-weight: 500;
 }
-.booking .light--font {
+.book .light--font {
   font-weight: 300;
 }
-.booking .margin__24 {
+.book .margin__24 {
   margin-bottom: 1.5em;
-}
-.booking .booking__btn {
-  box-shadow: 0 8.1px 10.4px rgba(0, 0, 0, 0.12), 0 65px 83px rgba(0, 0, 0, 0.06);
-  color: white;
-  background: #9356dc;
-  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
-  border-radius: 1.5em;
-  padding: 1em 1.5em;
-  border: none;
-  font-size: 0.9em;
 }
 
 .order {
@@ -185,6 +218,59 @@ a {
 }
 .footer .footer__email {
   color: white;
+}
+
+.menu__image--bastille {
+  background-image: url(/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  height: 250px;
+  width: 100%;
+  background-size: cover;
+}
+
+.menu {
+  background-color: whitesmoke;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+.menu .menu__heading {
+  font-family: Shrikhand, cursive;
+  font-weight: 300;
+}
+.menu .menu__card-body {
+  display: block;
+  border: 0px solid white;
+  border-radius: 15px;
+  box-shadow: 0 0.9px 5.9px rgba(0, 0, 0, 0.17), 0 3.1px 19.9px rgba(0, 0, 0, 0.101), 0 14px 89px rgba(0, 0, 0, 0.069);
+  padding: 10px;
+}
+.menu .menu__card-body .menu__card-title {
+  font-weight: 500;
+}
+.menu .menu__card-body .menu__card-text {
+  display: flex;
+  font-weight: 300;
+  display: flex;
+  justify-content: space-between;
+}
+.menu .menu__card-body .menu__currency {
+  font-weight: 500;
+}
+.menu .menu__card-body {
+  display: block;
+  border: 0px solid white;
+  border-radius: 15px;
+  box-shadow: 0 0.9px 5.9px rgba(0, 0, 0, 0.17), 0 3.1px 19.9px rgba(0, 0, 0, 0.101), 0 14px 89px rgba(0, 0, 0, 0.069);
+  padding: 10px;
+}
+.menu .menu__card-body .menu__card-title {
+  font-weight: 500;
+  line-height: 1.8;
+}
+.menu .menu__card-body .menu__card-text {
+  font-weight: 300;
+}
+.menu .menu__card-body .menu__currency {
+  font-weight: 500;
 }
 
 /*# sourceMappingURL=style.css.map */

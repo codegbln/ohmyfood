@@ -5,9 +5,16 @@
 .navbar {
     box-shadow: 0 0.5px 1.4px rgba(0, 0, 0, 0.18),
         0 4px 11px rgba(0, 0, 0, 0.09);
-    padding-top: 1.5em;
-    padding-bottom: 1em;
     text-align: center;
+    padding: 12px 0;
+
+    .navbar__back {
+        position: absolute;
+        left: 15px;
+        color: black;
+        padding-top: 10px;
+
+    }
 }
 
 .margin-20--bottom {
@@ -21,20 +28,62 @@
 .margin-10--bottom {
     margin-bottom: 10px;
 }
-.margin-15--bottom{
-    margin: bottom 15px;
+
+.margin-15--bottom {
+    margin-bottom: 15px;
+}
+
+.margin-40px--top--bottom {
+    padding: 40px 0px;
+}
+
+.margin-40px-bottom {
+    margin-bottom: 40px;
+}
+
+.margin-50px--bottom{
+    margin-bottom: 50px;
+}
+.margin-100px--bottom{
+    margin-bottom: 100px;
 }
 
 a {
     text-decoration: none;
 }
 
+.book__button {
+    box-shadow: 0 8.1px 10.4px rgba(0, 0, 0, 0.12),
+        0 65px 83px rgba(0, 0, 0, 0.06);
+    color: white;
+    background: rgb(147, 86, 220);
+    background: linear-gradient(0deg, rgba(147, 86, 220, 1) 0%, rgba(255, 121, 218, 1) 100%);
+    border-radius: 1.5em;
+    padding: 1em 1.5em;
+    border: none;
+    font-size: .9em;
+}
+
+.order__button {
+    box-shadow: 0 8.1px 10.4px rgba(0, 0, 0, 0.12),
+        0 65px 83px rgba(0, 0, 0, 0.06);
+    color: white;
+    background: rgb(147, 86, 220);
+    background: linear-gradient(0deg, rgba(147, 86, 220, 1) 0%, rgba(255, 121, 218, 1) 100%);
+    border-radius: 1.5em;
+    padding: 15px 70px;
+    border: none;
+    font-size: .9em;
+    
+    
+}
+
 .map {
     text-align: center;
     padding: 20px 0;
     background: rgb(233, 233, 233);
-    background: linear-gradient(0deg, rgba(233, 233, 233, 1) 85%, 
-    rgba(233, 233, 233, 1) 95%, rgba(198, 198, 198, 1) 100%);
+    background: linear-gradient(0deg, rgba(233, 233, 233, 1) 85%,
+            rgba(233, 233, 233, 1) 95%, rgba(198, 198, 198, 1) 100%);
 
     .map__marker {
         position: absolute;
@@ -53,7 +102,7 @@ a {
     }
 }
 
-.booking {
+.book {
     text-align: center;
     background-color: #f4f5f4;
     padding: 2em 2em 3em;
@@ -71,17 +120,7 @@ a {
         margin-bottom: 1.5em;
     }
 
-    .booking__btn {
-        box-shadow: 0 8.1px 10.4px rgba(0, 0, 0, 0.12),
-            0 65px 83px rgba(0, 0, 0, 0.06);
-        color: white;
-        background: rgb(147, 86, 220);
-        background: linear-gradient(0deg, rgba(147, 86, 220, 1) 0%, rgba(255, 121, 218, 1) 100%);
-        border-radius: 1.5em;
-        padding: 1em 1.5em;
-        border: none;
-        font-size: .9em;
-    }
+
 }
 
 .order {
@@ -191,7 +230,7 @@ a {
 
     .footer__logo {
         font-family: $font-stack-alt;
-        font-weight: 300;
+        font-weight: $font-stack-alt-1;
     }
 
     .footer__icon {
@@ -209,3 +248,79 @@ a {
     }
 
 }
+
+.menu__image--bastille {
+    background-image: url(/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+    height: 250px;
+    width: 100%;
+    background-size:cover
+   
+}
+.menu {
+    background-color: rgb(245, 245, 245);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+
+
+    .menu__heading {
+        font-family: $font-stack-alt;
+        font-weight: $font-stack-alt-1;
+
+    }
+
+
+    .menu__card-body {
+        display: block;
+        border: 0px solid rgb(255, 255, 255);
+        border-radius: 15px;
+        box-shadow:
+            0 0.9px 5.9px rgba(0, 0, 0, 0.17),
+            0 3.1px 19.9px rgba(0, 0, 0, 0.101),
+            0 14px 89px rgba(0, 0, 0, 0.069);
+        padding: 10px;
+
+        .menu__card-title {
+            font-weight: 500;
+            
+        }
+
+        .menu__card-text {
+            display: flex;
+            font-weight: $font-stack-alt-1;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .menu__currency {
+            font-weight: 500;
+
+        }
+
+
+    }
+
+    .menu__card-body {
+        display: block;
+        border: 0px solid rgb(255, 255, 255);
+        border-radius: 15px;
+        box-shadow:
+            0 0.9px 5.9px rgba(0, 0, 0, 0.17),
+            0 3.1px 19.9px rgba(0, 0, 0, 0.101),
+            0 14px 89px rgba(0, 0, 0, 0.069);
+        padding: 10px;
+
+        .menu__card-title {
+            font-weight: 500;
+            line-height: 1.8;
+        }
+
+        .menu__card-text {
+            font-weight: $font-stack-alt-1;
+        }
+
+        .menu__currency {
+            font-weight: 500;
+        }
+    }
+}
+
