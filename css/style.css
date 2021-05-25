@@ -174,11 +174,11 @@ hr {
 }
 .order .order-item {
   position: relative;
-  border: 5px solid #f4f5f4;
+  border: 5px #f4f5f4;
   background-color: #f4f5f4;
   border-radius: 25px;
   margin: 12px;
-  padding: 22px 20px;
+  padding: 25px 20px;
   box-shadow: 0 0.8px 0.9px rgba(0, 0, 0, 0.011), 0 1.9px 2.3px rgba(0, 0, 0, 0.016), 0 3.5px 4.3px rgba(0, 0, 0, 0.02), 0 6.3px 7.6px rgba(0, 0, 0, 0.024), 0 11.7px 14.2px rgba(0, 0, 0, 0.029), 0 28px 34px rgba(0, 0, 0, 0.04);
 }
 .order .order__1,
@@ -201,6 +201,12 @@ hr {
   padding-left: 15px;
   padding-right: 20px;
   color: #616161;
+}
+.order .order-item-tint {
+  background-color: #9256dc1c;
+}
+.order .order__icons-tint {
+  color: #9356DC;
 }
 
 .card-group {
@@ -241,6 +247,24 @@ hr {
   font-weight: 300;
 }
 
+.d-flex-grow {
+  flex-grow: 1;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+.checkbox-heart__input {
+  display: none;
+}
+.checkbox-heart__input:checked + label {
+  color: #9356dc;
+}
+.checkbox-heart__input:checked + label:hover {
+  cursor: pointer;
+}
+
 .heart {
   display: inline;
 }
@@ -253,6 +277,7 @@ hr {
   top: 20px;
   padding: 5px 30px;
   background-color: aquamarine;
+  color: #318264;
 }
 
 .footer {
