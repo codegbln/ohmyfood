@@ -1,0 +1,29 @@
+.book__button {
+    box-shadow: 0 8.1px 10.4px rgba(0, 0, 0, 0.12),
+        0 65px 83px rgba(0, 0, 0, 0.06);
+    color: white;
+    background: rgb(147, 86, 220);
+    background: linear-gradient(0deg, rgba(147, 86, 220, 1) 0%, rgba(255, 121, 218, 1) 100%);
+    border-radius: 1.5em;
+    padding: 1em 1.5em;
+    border: none;
+    font-size: .9em;
+}
+
+.menu_order--button {
+    display: flex;
+    justify-content: center;
+}
+
+.order__button {
+    box-shadow: 0 8.1px 10.4px rgba(0, 0, 0, 0.12),
+        0 65px 83px rgba(0, 0, 0, 0.06);
+    color: white;
+    background: rgb(147, 86, 220);
+    background: linear-gradient(0deg, rgba(147, 86, 220, 1) 0%, rgba(255, 121, 218, 1) 100%);
+    border-radius: 1.5em;
+    padding: 15px 70px;
+    border: none;
+    font-size: .9em;
+    align-content: center;
+}

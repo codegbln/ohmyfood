@@ -1,0 +1,16 @@
+.footer {
+    background-color: rgb(47, 47, 47);
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .footer__logo {
+        font-family: $font-stack-alt;
+        font-weight: $font-stack-alt-1;
+    }
+
+    .footer__email {
+        color: white;
+    }
+
+}
