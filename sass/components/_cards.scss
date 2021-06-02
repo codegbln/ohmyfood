@@ -1,0 +1,120 @@
+.bg {
+    background-color: rgb(245, 245, 245);
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+    margin-top: -60px;
+
+    .menu__heading {
+        display: flex;
+        justify-content: space-between;
+        font-family: $font-stack-alt;
+        font-weight: $font-stack-alt-1;
+
+    }
+
+
+    .menu__card-body {
+        display: block;
+        border: 0px solid rgb(255, 255, 255);
+        border-radius: 15px;
+        box-shadow:
+            0 0.9px 5.9px rgba(0, 0, 0, 0.17),
+            0 3.1px 19.9px rgba(0, 0, 0, 0.101),
+            0 14px 89px rgba(0, 0, 0, 0.069);
+        padding: 10px 30px 10px 10px;
+
+        .menu__card-title {
+            font-weight: 500;
+            line-height: 1.8;
+        }
+
+        .menu__card-text {
+            display: flex;
+            font-weight: $font-stack-alt-1;
+            justify-content: space-between;
+        }
+
+    }
+
+}
+
+.card__top-right {
+    position: absolute;
+    right: 20px;
+    border: solid aquamarine;
+    border-radius: 3px;
+    top: 20px;
+    padding: 5px 30px;
+    background-color: aquamarine;
+    color: rgb(49, 130, 100)
+}
+
+.checkbox-heart {
+    &__input {
+        display: none;
+
+        &:checked+label {
+            color: rgb(147, 86, 220);
+
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+
+.heart {
+    display: inline;
+}
+
+.card-group {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: #f4f5f4;
+    max-width: 100%;
+    padding: 40px 0;
+}
+
+.card {
+    display: block;
+    position: relative;
+    border: 0px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow:
+        0 0.9px 5.9px rgba(0, 0, 0, 0.17),
+        0 3.1px 19.9px rgba(0, 0, 0, 0.101),
+        0 14px 89px rgba(0, 0, 0, 0.069);
+}
+
+.card__img-top {
+    height: 170px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    max-width: 100%;
+}
+
+.card__body {
+    display: flex;
+    padding: 15px;
+}
+
+.card__title {
+    font-weight: 500;
+}
+
+.card__text {
+    font-weight: 300;
+}
+
+.d-flex-grow {
+    flex-grow: 1;
+}
+
+.align-self-center {
+    align-self: center;
+}

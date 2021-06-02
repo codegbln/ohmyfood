@@ -112,15 +112,157 @@ hr {
   background-color: #f4f5f4;
 }
 
-.heart__icon {
-  display: inline-block;
-  padding-right: 30px;
+.footer {
+  background-color: #2f2f2f;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.footer .footer__logo {
+  font-family: Shrikhand, cursive;
+  font-weight: 300;
+}
+.footer .footer__email {
+  color: white;
+}
+
+.bg__image--bastille {
+  background-image: url(/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  height: 290px;
+  width: 100%;
+  background-size: cover;
+}
+
+.bg__image--palette {
+  background-image: url(/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  height: 290px;
+  width: 100%;
+  background-size: cover;
+}
+
+.bg__image--gourmand {
+  background-image: url(/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  height: 290px;
+  width: 100%;
+  background-size: cover;
+}
+
+.bg__image--enchanted {
+  background-image: url(/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  height: 290px;
+  width: 100%;
+  background-size: cover;
 }
 
 .image-container {
   position: relative;
   text-align: center;
   color: #3b8568;
+}
+
+.bg {
+  background-color: whitesmoke;
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
+  margin-top: -60px;
+}
+.bg .menu__heading {
+  display: flex;
+  justify-content: space-between;
+  font-family: Shrikhand, cursive;
+  font-weight: 300;
+}
+.bg .menu__card-body {
+  display: block;
+  border: 0px solid white;
+  border-radius: 15px;
+  box-shadow: 0 0.9px 5.9px rgba(0, 0, 0, 0.17), 0 3.1px 19.9px rgba(0, 0, 0, 0.101), 0 14px 89px rgba(0, 0, 0, 0.069);
+  padding: 10px 30px 10px 10px;
+}
+.bg .menu__card-body .menu__card-title {
+  font-weight: 500;
+  line-height: 1.8;
+}
+.bg .menu__card-body .menu__card-text {
+  display: flex;
+  font-weight: 300;
+  justify-content: space-between;
+}
+
+.card__top-right {
+  position: absolute;
+  right: 20px;
+  border: solid aquamarine;
+  border-radius: 3px;
+  top: 20px;
+  padding: 5px 30px;
+  background-color: aquamarine;
+  color: #318264;
+}
+
+.checkbox-heart__input {
+  display: none;
+}
+.checkbox-heart__input:checked + label {
+  color: #9356dc;
+}
+.checkbox-heart__input:checked + label:hover {
+  cursor: pointer;
+}
+
+.heart {
+  display: inline;
+}
+
+.card-group {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: #f4f5f4;
+  max-width: 100%;
+  padding: 40px 0;
+}
+
+.card {
+  display: block;
+  position: relative;
+  border: 0px solid white;
+  border-radius: 15px;
+  box-shadow: 0 0.9px 5.9px rgba(0, 0, 0, 0.17), 0 3.1px 19.9px rgba(0, 0, 0, 0.101), 0 14px 89px rgba(0, 0, 0, 0.069);
+}
+
+.card__img-top {
+  height: 170px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+.card__body {
+  display: flex;
+  padding: 15px;
+}
+
+.card__title {
+  font-weight: 500;
+}
+
+.card__text {
+  font-weight: 300;
+}
+
+.d-flex-grow {
+  flex-grow: 1;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+.heart__icon {
+  display: inline-block;
+  padding-right: 30px;
 }
 
 .map {
@@ -138,9 +280,6 @@ hr {
 .map .map__text {
   font-weight: 400;
   color: black;
-}
-.map a {
-  text-decoration: none;
 }
 
 .book {
@@ -207,134 +346,6 @@ hr {
 }
 .order .order__icons-tint {
   color: #9356DC;
-}
-
-.card-group {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  background-color: #f4f5f4;
-  max-width: 100%;
-  padding: 40px 0;
-}
-
-.card {
-  display: block;
-  position: relative;
-  border: 0px solid white;
-  border-radius: 15px;
-  box-shadow: 0 0.9px 5.9px rgba(0, 0, 0, 0.17), 0 3.1px 19.9px rgba(0, 0, 0, 0.101), 0 14px 89px rgba(0, 0, 0, 0.069);
-}
-
-.card__img-top {
-  height: 170px;
-  object-fit: cover;
-  border-radius: 15px 15px 0 0;
-  width: 100%;
-  max-width: 100%;
-}
-
-.card__body {
-  display: flex;
-  padding: 15px;
-}
-
-.card__title {
-  font-weight: 500;
-}
-
-.card__text {
-  font-weight: 300;
-}
-
-.d-flex-grow {
-  flex-grow: 1;
-}
-
-.align-self-center {
-  align-self: center;
-}
-
-.checkbox-heart__input {
-  display: none;
-}
-.checkbox-heart__input:checked + label {
-  color: #9356dc;
-}
-.checkbox-heart__input:checked + label:hover {
-  cursor: pointer;
-}
-
-.heart {
-  display: inline;
-}
-
-.card__top-right {
-  position: absolute;
-  right: 20px;
-  border: solid aquamarine;
-  border-radius: 3px;
-  top: 20px;
-  padding: 5px 30px;
-  background-color: aquamarine;
-  color: #318264;
-}
-
-.bg__image--bastille {
-  background-image: url(/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
-  height: 290px;
-  width: 100%;
-  background-size: cover;
-}
-
-.bg__image--palette {
-  background-image: url(/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-  height: 290px;
-  width: 100%;
-  background-size: cover;
-}
-
-.bg__image--gourmand {
-  background-image: url(/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
-  height: 290px;
-  width: 100%;
-  background-size: cover;
-}
-
-.bg__image--enchanted {
-  background-image: url(/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
-  height: 290px;
-  width: 100%;
-  background-size: cover;
-}
-
-.bg {
-  background-color: whitesmoke;
-  border-top-left-radius: 45px;
-  border-top-right-radius: 45px;
-  margin-top: -60px;
-}
-.bg .menu__heading {
-  display: flex;
-  justify-content: space-between;
-  font-family: Shrikhand, cursive;
-  font-weight: 300;
-}
-.bg .menu__card-body {
-  display: block;
-  border: 0px solid white;
-  border-radius: 15px;
-  box-shadow: 0 0.9px 5.9px rgba(0, 0, 0, 0.17), 0 3.1px 19.9px rgba(0, 0, 0, 0.101), 0 14px 89px rgba(0, 0, 0, 0.069);
-  padding: 10px 30px 10px 10px;
-}
-.bg .menu__card-body .menu__card-title {
-  font-weight: 500;
-  line-height: 1.8;
-}
-.bg .menu__card-body .menu__card-text {
-  display: flex;
-  font-weight: 300;
-  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */

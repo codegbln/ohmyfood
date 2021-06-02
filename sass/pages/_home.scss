@@ -1,0 +1,102 @@
+.map {
+    text-align: center;
+    padding: 15px 0;
+    background: rgb(233, 233, 233);
+    background: linear-gradient(0deg, rgba(233, 233, 233, 1) 85%,
+            rgba(233, 233, 233, 1) 95%, rgba(198, 198, 198, 1) 100%);
+
+    .map__marker {
+        position: absolute;
+        height: 28px;
+        left: 90px;
+        color: black;
+    }
+
+    .map__text {
+        font-weight: 400;
+        color: black;
+    }
+}
+
+.book {
+    text-align: center;
+    background-color: #f4f5f4;
+    padding: 2em 2em 3em;
+
+    .bold--font {
+        font-weight: 500;
+    }
+
+    .light--font {
+        font-weight: 300;
+    }
+
+    .margin__24 {
+        margin-bottom: 1.5em;
+    }
+}
+
+.order {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .order-group {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .order-item {
+        position: relative;
+        border: 5px #f4f5f4;
+        background-color: #f4f5f4;
+        border-radius: 25px;
+        margin: 12px;
+        padding: 25px 20px;
+        box-shadow:
+            0 0.8px 0.9px rgba(0, 0, 0, 0.011),
+            0 1.9px 2.3px rgba(0, 0, 0, 0.016),
+            0 3.5px 4.3px rgba(0, 0, 0, 0.02),
+            0 6.3px 7.6px rgba(0, 0, 0, 0.024),
+            0 11.7px 14.2px rgba(0, 0, 0, 0.029),
+            0 28px 34px rgba(0, 0, 0, 0.04);
+    }
+
+    .order__1,
+    .order__2,
+    .order__3 {
+        position: absolute;
+        left: -18px;
+        color: white;
+        margin-top: -5px;
+    }
+
+    .circle {
+        background-color: #9356DC;
+        border: 5px solid #9356DC;
+        height: 28px;
+        width: 28px;
+        border-radius: 100%;
+        text-align: center;
+    }
+
+    .order__icons {
+        padding-left: 15px;
+        padding-right: 20px;
+        color: rgb(97, 97, 97);
+    }
+
+    .order-item-tint {
+        background-color: #9256dc1c;
+    }
+
+    .order__icons-tint {
+        color: #9356DC;
+    }
+
+}
