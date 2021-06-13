@@ -166,28 +166,6 @@ hr {
   border-top-right-radius: 45px;
   margin-top: -60px;
 }
-.bg .menu__heading {
-  display: flex;
-  justify-content: space-between;
-  font-family: Shrikhand, cursive;
-  font-weight: 300;
-}
-.bg .menu__card-body {
-  display: block;
-  border: 0px solid white;
-  border-radius: 15px;
-  box-shadow: 0 0.9px 5.9px rgba(0, 0, 0, 0.17), 0 3.1px 19.9px rgba(0, 0, 0, 0.101), 0 14px 89px rgba(0, 0, 0, 0.069);
-  padding: 10px 30px 10px 10px;
-}
-.bg .menu__card-body .menu__card-title {
-  font-weight: 500;
-  line-height: 1.8;
-}
-.bg .menu__card-body .menu__card-text {
-  display: flex;
-  font-weight: 300;
-  justify-content: space-between;
-}
 
 .card__top-right {
   position: absolute;
@@ -200,11 +178,20 @@ hr {
   color: #318264;
 }
 
+.checkbox-heart .fas {
+  display: none;
+}
 .checkbox-heart__input {
   display: none;
 }
 .checkbox-heart__input:checked + label {
   color: #9356dc;
+}
+.checkbox-heart__input:checked + label .fas {
+  display: inline;
+}
+.checkbox-heart__input:checked + label .far {
+  display: none;
 }
 .checkbox-heart__input:checked + label:hover {
   cursor: pointer;
@@ -348,44 +335,62 @@ hr {
   color: #9356DC;
 }
 
-input {
+.menu-checkbox {
   display: none;
 }
-
-label {
-  cursor: pointer;
-}
-
-input:checked + label .card-checked {
+.menu-checkbox:checked + label .menu__checked {
   width: 30px;
 }
 
-.card-overlay {
+.menu {
+  display: block;
+  position: relative;
+  display: flex;
+  border: 0px solid white;
+  border-radius: 15px;
+  box-shadow: 0 0.9px 5.9px rgba(0, 0, 0, 0.17), 0 3.1px 19.9px rgba(0, 0, 0, 0.101), 0 14px 89px rgba(0, 0, 0, 0.069);
+  cursor: pointer;
+}
+.menu .menu__body {
+  display: block;
+  flex-grow: 1;
+  padding: 10px 30px 10px 10px;
+}
+.menu .menu__heading {
+  display: flex;
+  justify-content: space-between;
+  font-family: Shrikhand, cursive;
+  font-weight: 300;
+}
+.menu .menu__title {
+  font-weight: 500;
+  line-height: 1.8;
+}
+.menu .menu__text {
+  display: flex;
+  font-weight: 300;
+  justify-content: space-between;
+}
+.menu .menu__overlay {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  right: 0;
   z-index: 10;
 }
-
-.card-order {
-  position: relative;
-  display: flex;
-}
-
-.menu__card-body {
-  flex-grow: 1;
-}
-
-.menu__card {
-  display: block;
-}
-
-.card-checked {
+.menu .menu__checked {
   width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
+  background-color: #99E2D0;
+  cursor: pointer;
+  position: relative;
+  transition: 0.4s;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
 }
 
 /*# sourceMappingURL=style.css.map */

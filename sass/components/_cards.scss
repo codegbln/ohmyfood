@@ -3,39 +3,6 @@
     border-top-left-radius: 45px;
     border-top-right-radius: 45px;
     margin-top: -60px;
-
-    .menu__heading {
-        display: flex;
-        justify-content: space-between;
-        font-family: $font-stack-alt;
-        font-weight: $font-stack-alt-1;
-
-    }
-
-
-    .menu__card-body {
-        display: block;
-        border: 0px solid rgb(255, 255, 255);
-        border-radius: 15px;
-        box-shadow:
-            0 0.9px 5.9px rgba(0, 0, 0, 0.17),
-            0 3.1px 19.9px rgba(0, 0, 0, 0.101),
-            0 14px 89px rgba(0, 0, 0, 0.069);
-        padding: 10px 30px 10px 10px;
-
-        .menu__card-title {
-            font-weight: 500;
-            line-height: 1.8;
-        }
-
-        .menu__card-text {
-            display: flex;
-            font-weight: $font-stack-alt-1;
-            justify-content: space-between;
-        }
-
-    }
-
 }
 
 .card__top-right {
@@ -50,12 +17,22 @@
 }
 
 .checkbox-heart {
+    .fas{
+        display: none;
+    }
+
     &__input {
         display: none;
 
         &:checked+label {
             color: rgb(147, 86, 220);
-
+            
+            .fas{
+                display: inline;
+            }
+            .far{
+                display: none;
+            }
 
             &:hover {
                 cursor: pointer;

@@ -10,46 +10,9 @@
 @import "./components/cards";
 @import "./components/icons";
 @import "./pages/home";
+@import "./components/menu";
 
-input{
-    display: none;
-}
 
-label{
-    cursor: pointer;
-}
-
-input:checked + label 
-.card-checked{
-width: 30px;
-}
-
-.card-overlay{
-    position:absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    right: 0;
-    z-index: 10;
-}
-
-.card-order{
-    position: relative;
-    display: flex;
-}
-
-.menu__card-body {
-    flex-grow: 1;
-}
-.menu__card{
-    display: block;
-}
-
-.card-checked{
-    width: 0;
-    overflow: hidden;
-}
 
 
 
