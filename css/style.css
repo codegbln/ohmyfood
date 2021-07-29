@@ -309,7 +309,13 @@ hr {
 }
 .order .order__1,
 .order .order__2,
-.order .order__3 {
+.order .order__3,
+.order .order__4,
+.order .order__5,
+.order .order__6,
+.order .order__7,
+.order .order__8,
+.order .order__9 {
   position: absolute;
   left: -18px;
   color: white;
@@ -339,7 +345,7 @@ hr {
   display: none;
 }
 .menu-checkbox:checked + label .menu__checked {
-  width: 30px;
+  width: 55px;
 }
 
 .menu {
@@ -391,6 +397,10 @@ hr {
   transition: 0.4s;
   border-top-right-radius: 1em;
   border-bottom-right-radius: 1em;
+}
+
+.fa-check-circle {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
