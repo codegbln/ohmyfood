@@ -412,6 +412,14 @@ hr {
     z-index: -1;
   }
 }
+@keyframes fade_in {
+  from {
+    transform: translate(0px, 100%);
+  }
+  to {
+    transform: translate(0px, 0%);
+  }
+}
 .loader {
   animation-name: fade_out;
   animation-duration: 1s;

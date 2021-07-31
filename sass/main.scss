@@ -29,6 +29,21 @@
     }
 }
 
+@keyframes fade_in {
+    from{
+        transform: translate(0px, 100%);
+    }
+
+    to{
+        transform: translate(0px, 0%);
+    }
+}
+
+.fade_transition{
+    
+}
+
+
 .loader {
     animation-name: fade_out;
     animation-duration: 1s;
