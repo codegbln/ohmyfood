@@ -31,24 +31,40 @@
 
 @keyframes fade_in {
     from{
-        transform: translate(0px, 100%);
+        opacity: 0;
+        transform: translateY(0px, 100%);
     }
 
     to{
-        transform: translate(0px, 0%);
+        opacity: 1;
+        transform: translateY(0px, 0%);
     }
 }
 
-.fade_transition{
-    
+.menu--fade{
+animation-name: fade_in;
+animation-duration: 3s;
+animation-iteration-count: 1;
+animation-fill-mode: forwards;
 }
 
+menu--fade-1{
+animation-delay: 0-0.1s;
+}
+
+menu--fade-2{
+animation-delay: 0.3s;
+}
+
+menu--fade-3{
+animation-delay: 0.4s;
+}
 
 .loader {
     animation-name: fade_out;
-    animation-duration: 1s;
+    animation-duration: 0.7s;
     animation-fill-mode: forwards;
-    animation-delay: 1.2s;
+    animation-delay: 0.5s;
     display: flex;
     align-items: center;
     justify-content: center;
