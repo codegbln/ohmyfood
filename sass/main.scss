@@ -48,16 +48,16 @@ animation-iteration-count: 1;
 animation-fill-mode: forwards;
 }
 
-menu--fade-1{
-animation-delay: 0-0.1s;
+.menu--fade-1{
+animation-delay: 0s;
 }
 
-menu--fade-2{
-animation-delay: 0.3s;
+.menu--fade-2{
+animation-delay: 0.5s;
 }
 
-menu--fade-3{
-animation-delay: 0.4s;
+.menu--fade-3{
+animation-delay: 1s;
 }
 
 .loader {

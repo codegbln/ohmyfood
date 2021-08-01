@@ -62,6 +62,10 @@ p {
   margin-bottom: 20px;
 }
 
+.margin-5--bottom {
+  margin-bottom: 5px;
+}
+
 .margin-6--bottom {
   margin-bottom: 6px;
 }
@@ -98,6 +102,10 @@ p {
   padding-top: 30px;
 }
 
+.margin-right-5px {
+  margin-right: 5px;
+}
+
 a {
   text-decoration: none;
 }
@@ -124,6 +132,10 @@ hr {
 }
 .footer .footer__email {
   color: white;
+}
+.footer .footer__icon {
+  width: 20px;
+  display: inline-block;
 }
 
 .bg__image--bastille {
@@ -185,7 +197,10 @@ hr {
   display: none;
 }
 .checkbox-heart__input:checked + label {
-  color: #9356dc;
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  background-clip: text;
+  color: transparent;
+  padding: 1px;
 }
 .checkbox-heart__input:checked + label .fas {
   display: inline;
@@ -399,6 +414,13 @@ hr {
   border-bottom-right-radius: 1em;
 }
 
+.heading {
+  display: flex;
+  justify-content: space-between;
+  font-family: Shrikhand, cursive;
+  font-weight: 300;
+}
+
 .fa-check-circle {
   color: white;
 }
@@ -429,16 +451,16 @@ hr {
   animation-fill-mode: forwards;
 }
 
-menu--fade-1 {
-  animation-delay: -0.1s;
+.menu--fade-1 {
+  animation-delay: 0s;
 }
 
-menu--fade-2 {
-  animation-delay: 0.3s;
+.menu--fade-2 {
+  animation-delay: 0.5s;
 }
 
-menu--fade-3 {
-  animation-delay: 0.4s;
+.menu--fade-3 {
+  animation-delay: 1s;
 }
 
 .loader {

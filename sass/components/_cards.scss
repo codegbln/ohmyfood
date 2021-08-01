@@ -25,7 +25,10 @@
         display: none;
 
         &:checked+label {
-            color: rgb(147, 86, 220);
+            background:$primary-gradient;
+            background-clip: text;
+            color: transparent;
+            padding: 1px;
             
             .fas{
                 display: inline;
