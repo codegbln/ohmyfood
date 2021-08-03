@@ -16,6 +16,22 @@
 </head>
 
 <body>
+    <div class="loader">
+        <div class="lds-default">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
     <nav class="navbar">
         <a class="navbar__back" href="/index.html"><span>
                 <i class="fas fa-arrow-left fa-1x"></i>
@@ -25,114 +41,197 @@
             <img src="/images/logo/ohmyfood@2x.svg" alt="Ohmyfood logo">
         </a>
     </nav>
-    
+
     <div class="bg__image--enchanted"></div>
-    
+
     <!-- Menu cards -->
-    
+
     <div class="bg margin-50px--top--bottom">
 
         <div class="container">
-            <div>   
-            <h2 class="menu__heading pd-30--top margin-30-bottom">The Enchanted Plate
-            <span class="heart__icon"><i class="far fa-heart"></i></span></h2>
+            <div>
+                <h2 class="heading pd-30--top margin-30-bottom">The Enchanted Plate
+                    <div class="align-self-center">
+                        <span class="checkbox-heart">
+                            <input class="checkbox-heart__input" id="heart-2" type="checkbox">
+                            <label class="checkbox-heart__label" for="heart-2">
+                                <i class="fas fa-heart fa-sm"></i><i class="far fa-heart fa-sm"></i>
+                            </label>
+                        </span>
+                    </div>
+                </h2>
             </div>
-        <p class="menu__subheading margin-6--bottom">ENTREES</p>
-        <hr>
+            <p class="menu__subheading margin-6--bottom">ENTREES</p>
+            <hr>
 
-        <div class="menu__card-body margin-15--bottom">
-            <p class="menu__card-title">Foie Gras Ravioli</p>
-            <p class="menu__card-text"><span>with truffle cream</span> 
-                <strong>25€</strong></p>   
-        </div>
+            <input class="menu-checkbox" type="checkbox" name="pick-checkbox" id="order-1">
+            <label for="order-1" class="menu margin-15--bottom">
+                <span class="menu__overlay"></span>
+                <span class="menu__body">
+                    <strong class="menu__title">Foie Gras Ravioli</strong>
+                    <span class="menu__text">with truffle cream
+                        <strong>25€</strong>
+                    </span>
+                </span>
+                <span class="menu__checked"><i class="fas fa-check-circle fa-lg"></i>
+                </span>
+            </label>
 
-        <div class="menu__card-body margin-15--bottom">
-            <p class="menu__card-title">Oscietra Caviar</p>
-            <p class="menu__card-text"><span>with buckwheat blinis</span><strong>35€</strong></p>
-        </div>
+            <input class="menu-checkbox" type="checkbox" name="pick-checkbox" id="order-2">
+            <label for="order-2" class="menu margin-15--bottom">
+                <span class="menu__overlay"></span>
+                <span class="menu__body">
+                    <strong class="menu__title">Oscietra Caviar</strong>
+                    <span class="menu__text">with buckwheat blinis
+                        <strong>35€</strong>
+                    </span>
+                </span>
+                <span class="menu__checked"><i class="fas fa-check-circle fa-lg"></i>
+                </span>
+            </label>
 
-        <div class="menu__card-body margin-15--bottom">
-            <p class="menu__card-title">Lobster and Leek Foam</p>
-            <p class="menu__card-text"><span>Marinated with orange zest</span> 
-            <strong>20€</strong></p>
-        </div>
+            <input class="menu-checkbox" type="checkbox" name="pick-checkbox" id="order-3">
+            <label for="order-3" class="menu margin-15--bottom">
+                <span class="menu__overlay"></span>
+                <span class="menu__body">
+                    <strong class="menu__title">Lobster and Leek Foam</strong>
+                    <span class="menu__text">Marinated with orange zest
+                        <strong>20€</strong>
+                    </span>
+                </span>
+                <span class="menu__checked"><i class="fas fa-check-circle fa-lg"></i>
+                </span>
+            </label>
 
-         <div class="menu__card-body margin-40px-bottom">
-            <p class="menu__card-title">Duck Foie Gras</p>
-            <p class="menu__card-text"><span>with fig jam and grilled baguette</span> 
-            <strong>35€</strong></p>
-        <div>
-                
+            <input class="menu-checkbox" type="checkbox" name="pick-checkbox" id="order-4">
+            <label for="order-4" class="menu margin-15--bottom">
+                <span class="menu__overlay"></span>
+                <span class="menu__body">
+                    <strong class="menu__title">Duck Foie Gras</strong>
+                    <span class="menu__text">with fig jam and grilled baguette
+                        <strong>35€</strong>
+                    </span>
+                </span>
+                <span class="menu__checked"><i class="fas fa-check-circle fa-lg"></i>
+                </span>
+            </label>
+
+            <!-- MAIN DISH -->
+            <p class="menu__subheading margin-6--bottom margin-50px--top">MAIN DISH</p>
+            <hr>
+
+            <input class="menu-checkbox" type="checkbox" name="pick-checkbox" id="order-5">
+            <label for="order-5" class="menu margin-15--bottom">
+                <span class="menu__overlay"></span>
+                <span class="menu__body">
+                    <strong class="menu__title">Fresh Buttered Scallops</strong>
+                    <span class="menu__text">with white celery puree
+                        <strong>40€</strong>
+                    </span>
+                </span>
+                <span class="menu__checked"><i class="fas fa-check-circle fa-lg"></i>
+                </span>
+            </label>
+
+            <input class="menu-checkbox" type="checkbox" name="pick-checkbox" id="order-6">
+            <label for="order-6" class="menu margin-15--bottom">
+                <span class="menu__overlay"></span>
+                <span class="menu__body">
+                    <strong class="menu__title">Pan-Fried Lobster</strong>
+                    <span class="menu__text">with mashed potatoes
+                        <strong>35€</strong>
+                    </span>
+                </span>
+                <span class="menu__checked"><i class="fas fa-check-circle fa-lg"></i>
+                </span>
+            </label>
+
+            <input class="menu-checkbox" type="checkbox" name="pick-checkbox" id="order-7">
+            <label for="order-7" class="menu margin-15--bottom">
+                <span class="menu__overlay"></span>
+                <span class="menu__body">
+                    <strong class="menu__title">Braised Ox Tail</strong>
+                    <span class="menu__text">with wild rice and lemon zest
+                        <strong>44€</strong>
+                    </span>
+                </span>
+                <span class="menu__checked"><i class="fas fa-check-circle fa-lg"></i>
+                </span>
+            </label>
+
+            <!-- DESSERTS -->
+
+            <p class="menu__subheading margin-6--bottom margin-50px--top">DESSERTS</p>
+            <hr>
+
+            <input class="menu-checkbox" type="checkbox" name="pick-checkbox" id="order-8">
+            <label for="order-8" class="menu margin-15--bottom">
+                <span class="menu__overlay"></span>
+                <span class="menu__body">
+                    <strong class="menu__title">Chocolate and Hazelnut Macaroons</strong>
+                    <span class="menu__text">with caramel butter ice cream
+                        <strong>18€</strong>
+                    </span>
+                </span>
+                <span class="menu__checked"><i class="fas fa-check-circle fa-lg"></i>
+                </span>
+            </label>
+
+            <input class="menu-checkbox" type="checkbox" name="pick-checkbox" id="order-9">
+            <label for="order-9" class="menu margin-15--bottom">
+                <span class="menu__overlay"></span>
+                <span class="menu__body">
+                    <strong class="menu__title">Baba au rhum</strong>
+                    <span class="menu__text">with lemon drizzle
+                        <strong>22€</strong>
+                    </span>
+                </span>
+                <span class="menu__checked"><i class="fas fa-check-circle fa-lg"></i>
+                </span>
+            </label>
+
+            <input class="menu-checkbox" type="checkbox" name="pick-checkbox" id="order-10">
+            <label for="order-10" class="menu margin-50px--bottom">
+                <span class="menu__overlay"></span>
+                <span class="menu__body">
+                    <strong class="menu__title">Lemon Meringue Pie</strong>
+                    <span class="menu__text">Destructured
+                        <strong>23€</strong>
+                    </span>
+                </span>
+                <span class="menu__checked"><i class="fas fa-check-circle fa-lg"></i>
+                </span>
+            </label>
+
+            <!-- Button -->
+            <div class="menu_order--button">
+                <button class="order__button margin-100px--bottom" type="button">Order</button>
             </div>
-            
         </div>
 
-    <!-- MAIN DISH -->
-        <p class="menu__subheading margin-6--bottom">MAIN DISH</p>
-        <hr>
-        <div class="menu__card-body margin-15--bottom">
-            <p class="menu__card-title">Fresh Buttered Scallops</p>
-            <p class="menu__card-text"><span>with white celery puree</span>
-            <strong>40€</strong></p> 
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="container">
+                <p class="footer__logo margin-20--bottom">ohmyfood </p>
+
+                <p class="footer__icon-text margin-10--bottom">
+                    <span class="footer__icon">
+                        <i class="fas fa-utensils"></i></span>
+                    Suggest a Restaurant</p>
+
+
+                <p class="footer__icon-text margin-10--bottom">
+                    <span class="footer__icon">
+                        <i class="fas fa-hands-helping"></i></span>
+                    Become a partner</p>
+
+                <p class="margin-10--bottom">Legal</p>
+                <a href="#" class="footer__email">
+                    <p>Contact</p>
+                </a>
+            </div>
         </div>
-
-        <div class="menu__card-body margin-15--bottom">
-            <p class="menu__card-title">Pan-Fried Lobster</p>
-            <p class="menu__card-text"><span>with mashed potatoes</span>
-            <strong>35€</strong></p>
-        </div>
-
-        <div class="menu__card-body margin-40px-bottom">
-            <p class="menu__card-title">Braised Ox Tail</p>
-            <p class="menu__card-text"><span>with wild rice and lemon zest</span>
-            <strong>44€</strong></p>
-        </div>
-        
-    <!-- DESSERTS -->
-
-    <p class="menu__subheading margin-6--bottom">DESSERTS</p>
-        <hr>
-        <div class="menu__card-body margin-15--bottom">
-            <p class="menu__card-title">Chocolate and Hazelnut Macaroons</p>
-            <p class="menu__card-text">with caramel butter ice cream
-            <strong>18€</strong></p>  
-        </div>
-
-        <div class="menu__card-body margin-15--bottom">
-            <p class="menu__card-title">Baba au rhum</p>
-            <p class="menu__card-text"><span>with lemon drizzle</span>
-            <strong>22€</strong></p>
-        </div>
-
-        <div class="menu__card-body margin-50px--bottom">
-            <p class="menu__card-title">Lemon Meringue Pie</p>
-            <p class="menu__card-text"><span>Destructured</span> 
-            <strong>23€</strong></p>
-        </div>
-
-<!-- Button -->
-        <div class="menu_order--button">
-            <button class="order__button margin-100px--bottom" type="button">Order</button>
-        </div>
-    </div>
-
-
-<!-- Footer -->
-<div class="footer">
-    <div class="container">
-        <p class="footer__logo margin-20--bottom">ohmyfood</p>
-        <span class="footer__icon margin-10--bottom">
-        <i class="fas fa-utensils"></i></span>
-    <h4 class="footer__icon-text margin-10--bottom">Suggest a Restaurant</h4>
-        
-        <span class="footer__icon margin-10--bottom">
-            <i class="fas fa-hands-helping"></i></span>
-            <p class="footer__icon-text margin-10--bottom"> Become a partner</p>
-        
-        <p class="margin-10--bottom">Legal</p>
-        <a href="#" class="footer__email"><p>Contact</p></a>
-    </div>
-    </div>
 </body>
 
 </html>

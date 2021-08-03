@@ -16,6 +16,22 @@
 </head>
 
 <body>
+    <div class="loader">
+        <div class="lds-default">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
     <nav class="navbar">
         <a class="navbar__back" href="/index.html"><span>
                 <i class="fas fa-arrow-left fa-1x"></i>
@@ -33,9 +49,18 @@
     <div class="bg margin-50px--top--bottom">
         <div class="container">
             <div>
-                <h2 class="menu__heading pd-30--top margin-30-bottom">The Full Palette
-                    <span class="heart__icon"><i class="far fa-heart"></i></span></h2>
+                <h2 class="heading pd-30--top margin-30-bottom">The Full Palette
+                    <div class="align-self-center">
+                        <span class="checkbox-heart">
+                            <input class="checkbox-heart__input" id="heart-2" type="checkbox">
+                            <label class="checkbox-heart__label" for="heart-2">
+                                <i class="fas fa-heart fa-sm"></i><i class="far fa-heart fa-sm"></i>
+                            </label>
+                        </span>
+                    </div>
+                </h2>
             </div>
+
             <p class="menu__subheading margin-6--bottom">ENTREES</p>
             <hr>
 
@@ -80,7 +105,7 @@
 
 
             <!-- MAIN DISH -->
-            <p class="menu__subheading margin-6--bottom">MAIN DISH</p>
+            <p class="menu__subheading margin-6--bottom margin-50px--top">MAIN DISH</p>
             <hr>
 
 
@@ -125,7 +150,7 @@
 
             <!-- DESSERTS -->
 
-            <p class="menu__subheading margin-6--bottom">DESSERTS</p>
+            <p class="menu__subheading margin-6--bottom margin-50px--top">DESSERTS</p>
             <hr>
 
             <input class="menu-checkbox" type="checkbox" name="pick-checkbox" id="order-7">
@@ -155,7 +180,7 @@
             </label>
 
             <input class="menu-checkbox" type="checkbox" name="pick-checkbox" id="order-9">
-            <label for="order-9" class="menu margin-15--bottom">
+            <label for="order-9" class="menu margin-50px--bottom">
                 <span class="menu__overlay"></span>
                 <span class="menu__body">
                     <strong class="menu__title">Chocolate Mousse</strong>
@@ -180,14 +205,18 @@
     <!-- Footer -->
     <div class="footer">
         <div class="container">
-            <p class="footer__logo margin-20--bottom">ohmyfood</p>
-            <span class="footer__icon margin-10--bottom">
-                <i class="fas fa-utensils"></i></span>
-            <h4 class="footer__icon-text margin-10--bottom">Suggest a Restaurant</h4>
+            <p class="footer__logo margin-20--bottom">ohmyfood </p>
 
-            <span class="footer__icon margin-10--bottom">
-                <i class="fas fa-hands-helping"></i></span>
-            <p class="footer__icon-text margin-10--bottom"> Become a partner</p>
+            <p class="footer__icon-text margin-10--bottom">
+                <span class="footer__icon">
+                    <i class="fas fa-utensils"></i></span>
+                Suggest a Restaurant</p>
+
+
+            <p class="footer__icon-text margin-10--bottom">
+                <span class="footer__icon">
+                    <i class="fas fa-hands-helping"></i></span>
+                Become a partner</p>
 
             <p class="margin-10--bottom">Legal</p>
             <a href="#" class="footer__email">

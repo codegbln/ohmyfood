@@ -94,6 +94,10 @@ p {
   margin-bottom: 50px;
 }
 
+.margin-50px--top {
+  margin-top: 50px;
+}
+
 .margin-100px--bottom {
   margin-bottom: 100px;
 }
