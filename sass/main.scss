@@ -41,6 +41,29 @@
     }
 }
 
+@keyframes rotate {
+    from{
+        opacity: 0;
+        transform: rotate(0.5turn);
+ 
+   }
+
+   to {
+        opacity: 1;
+        transform: rotate(0turn);
+   }
+
+}
+
+
+.rotate{
+    animation-name:rotate;
+    animation-duration: 2s;
+    animation-iteration-count: 44;
+   transform: rotate(0deg);
+   
+}
+
 .menu--fade{
 animation-name: fade_in;
 animation-duration: 1s;
