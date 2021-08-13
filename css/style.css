@@ -278,7 +278,7 @@ hr {
   background: linear-gradient(0deg, #e9e9e9 85%, #e9e9e9 95%, #c6c6c6 100%);
 }
 .map .map__marker {
-  
+  position: absolute;
   height: 28px;
   left: 90px;
   color: black;
@@ -448,6 +448,21 @@ hr {
     transform: translate(0px, 0%);
   }
 }
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.rotate {
+  animation-name: rotate;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
 .menu--fade {
   animation-name: fade_in;
   animation-duration: 1s;
