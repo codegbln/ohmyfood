@@ -11,7 +11,7 @@
 @import "./components/icons";
 @import "./pages/home";
 @import "./components/menu";
-
+@import "./utilities/text";
 
 .fa-check-circle{ 
     color: white;
@@ -58,8 +58,6 @@
     animation-duration: 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-   
-   
 }
 
 .menu--fade{

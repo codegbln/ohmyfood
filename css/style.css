@@ -360,13 +360,6 @@ hr {
   color: #9356DC;
 }
 
-.menu-checkbox {
-  display: none;
-}
-.menu-checkbox:checked + label .menu__checked {
-  width: 55px;
-}
-
 .menu {
   display: block;
   position: relative;
@@ -416,6 +409,13 @@ hr {
   transition: 0.4s;
   border-top-right-radius: 1em;
   border-bottom-right-radius: 1em;
+}
+
+.menu-checkbox {
+  display: none;
+}
+.menu-checkbox:checked + label .menu__checked {
+  width: 55px;
 }
 
 .heading {
